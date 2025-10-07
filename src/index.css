@@ -1,0 +1,13 @@
+:root{
+  --accent: #6c63ff;
+  --muted: #9aa4b2;
+}
+body{
+  background-color:#0a0a0a;
+  color:#e6eef8;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+a { text-decoration: none; }
+.btn-info { background-color: var(--accent); border-color: var(--accent); }
+.card:hover { transform: translateY(-6px); transition: transform 200ms ease; }
+.skill-name { margin-top: 0.5rem; font-size: 0.95rem; color: var(--muted); }
