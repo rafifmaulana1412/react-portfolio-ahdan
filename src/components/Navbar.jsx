@@ -4,7 +4,7 @@ export default function Navbar(){
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor:'#070707'}}>
       <div className="container">
-        <a className="navbar-brand fw-bold text-info" href="#home">Muhammad Ahdan</a>
+        <a className="navbar-brand fw-bold text-info" href="#home">Muhammad Ahdan Rafif Maulana</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
           <span className="navbar-toggler-icon"></span>
         </button>
