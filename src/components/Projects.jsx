@@ -1,7 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const placeholders = [1,2,3];
+// ==== DATA PROJECTS ====
+const projects = [
+  {
+    title: "Montevía Restaurant",
+    description: "Fullstack Restaurant Website – React, Express, PostgreSQL, JWT, RBAC.",
+    demoLink: "https://final-project-frontend-tau-seven.vercel.app/",
+  },
+  {
+    title: "Coming Soon",
+    description: "Project placeholder 2",
+    demoLink: null,
+  },
+  {
+    title: "Coming Soon",
+    description: "Project placeholder 3",
+    demoLink: null,
+  },
+];
 
 export default function Projects(){
   return (
@@ -9,22 +26,41 @@ export default function Projects(){
       <div className="container" data-aos="fade-up">
         <h2 className="text-info fw-bold text-center mb-4">Projects</h2>
         <div className="row">
-          {placeholders.map((p, i) => (
+          {projects.map((p, i) => (
             <div className="col-md-4 mb-4" key={i}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i*0.15 }}
+                transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="card bg-secondary text-light h-100 border-0 shadow-sm"
                 whileHover={{ scale: 1.03 }}
               >
                 <div className="card-body d-flex flex-column">
-                  <h5 className="card-title">Coming Soon</h5>
-                  <p className="card-text text-muted">Project placeholder {i+1}</p>
+                  
+                  {/* Title */}
+                  <h5 className="card-title">{p.title}</h5>
+                  
+                  {/* Description */}
+                  <p className="card-text text-muted">{p.description}</p>
+
                   <div className="mt-auto">
-                    <button className="btn btn-outline-light" disabled>Details</button>
+                    {p.demoLink ? (
+                      <a 
+                        href={p.demoLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-outline-light"
+                      >
+                        Visit
+                      </a>
+                    ) : (
+                      <button className="btn btn-outline-light" disabled>
+                        Details
+                      </button>
+                    )}
                   </div>
+
                 </div>
               </motion.div>
             </div>
