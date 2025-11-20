@@ -5,13 +5,13 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: "Montevía Restaurant",
-    description: "Fullstack Restaurant Website – React, Express, PostgreSQL, JWT, RBAC.",
+    description: "Fullstack Restaurant Website – React, Express, PostgreSQL, JWT, RBAC. MVC",
     demoLink: "https://final-project-frontend-tau-seven.vercel.app/",
   },
   {
-    title: "Coming Soon",
-    description: "Project placeholder 2",
-    demoLink: null,
+    title: "Wedding Invitation",
+    description: "Frontend Project with react, bootstrap",
+    demoLink: "https://wedding-invitation-psi-lac.vercel.app/",
   },
   {
     title: "Coming Soon",
