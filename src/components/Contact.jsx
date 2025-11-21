@@ -16,7 +16,7 @@ export default function Contact(){
         <p className="text-secondary">Or download my CV:</p>
 
         <a 
-          href="/cv-ahdan.pdf" 
+          href="/CV Muhammad Ahdan Rafif Maulana.pdf" 
           target="_blank" 
           rel="noopener noreferrer"
           className="btn btn-info"
