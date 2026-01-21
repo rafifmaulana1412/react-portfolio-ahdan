@@ -14,9 +14,14 @@ const projects = [
     demoLink: "https://wedding-invitation-psi-lac.vercel.app/",
   },
   {
-    title: "Coming Soon",
-    description: "Project placeholder 3",
-    demoLink: null,
+    title: "Yayasan Al Muttaqiin Gorontalo",
+    description: "Project With React, Tailwind, backend serverless midtrans",
+    demoLink: "https://yayasan-almuttaqiin.vercel.app/",
+  },
+   {
+    title: "Yayasan Hidayatullah Gorontalo",
+    description: "Project With React",
+    demoLink: "https://yayasan-hidayatullah-gorontaloutara.vercel.app/",
   },
 ];
 
